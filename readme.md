@@ -21,4 +21,10 @@ Thank you for considering contributing to the Laravel framework! The contributio
 ### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
-"# laravel5.0" 
+"# laravel5.0"
+
+
+## Make localhost:8888 redirect to public folder automatically
+php -S localhost:8888 -t public
+
+make a public folder is a root document 
