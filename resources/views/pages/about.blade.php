@@ -4,9 +4,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>About Me!</h1>
+    <h1>About Me: <?=$name?></h1>
     <p>
-    	Elsayed Alaraby Developer
+    	Sayed Alaraby Web Developer & CRM Specialist
     </p>
 </body>
 </html>

@@ -38,4 +38,8 @@ php artisan make:controller controller-name --plain //create an empty controller
 php artisan help make:controller  					//this command to display all controller command's options
 
 
+#### controller passes data to view
+$name = 'sayed alaraby';
 
+##### passing data using with function
+return view('pages.about')->with('name', $name);
