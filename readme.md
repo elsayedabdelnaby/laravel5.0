@@ -24,7 +24,16 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 "# laravel5.0"
 
 
-## Make localhost:8888 redirect to public folder automatically
+### Make localhost:8888 redirect to public folder automatically
 php -S localhost:8888 -t public
 
 make a public folder is a root document 
+
+## Controller
+#### create controller
+php artisan make:controller controller-name   		//create a not empty controller
+php artisan make:controller controller-name --plain //create an empty controller
+php artisan help make:controller  					//this command to display all controller command's options
+
+
+
