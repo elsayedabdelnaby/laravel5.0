@@ -8,8 +8,9 @@ use Illuminate\Http\Request;
 class PagesController extends Controller {
 
 	public function about(){
-		$name = 'sayed alaraby';
-		return view('pages.about')->with('name', $name);
+		$name = '<span style="color:blue">sayed alaraby</span>';
+		$job  = '<span style="color:red;">Web Developer & CRM Specialist</span>';
+		return view('pages.about')->with(['name' => $name, 'job' => $job]);
 	}
 
 }

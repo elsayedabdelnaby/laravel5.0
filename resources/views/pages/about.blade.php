@@ -4,9 +4,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>About Me: <?=$name?></h1>
+    <h1>About Me: {{$name}}</h1>
     <p>
-    	Sayed Alaraby Web Developer & CRM Specialist
+    	{!! $job !!}
     </p>
 </body>
 </html>
