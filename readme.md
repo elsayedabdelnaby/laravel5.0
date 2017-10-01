@@ -40,6 +40,15 @@ php artisan help make:controller  					//this command to display all controller 
 
 #### controller passes data to view
 $name = 'sayed alaraby';
+$data = [];
+$data['first'] = 'sayed';
+$data['last'] = 'alaraby';
 
 ##### passing data using with function
 return view('pages.about')->with('name', $name);
+
+##### passing array of data 
+return view('pages.about', $data);
+
+##### passing data using compact function
+return view('pages.about', compact('name', 'data'));

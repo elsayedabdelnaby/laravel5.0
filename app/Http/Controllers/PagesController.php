@@ -10,7 +10,7 @@ class PagesController extends Controller {
 	public function about(){
 		$name = '<span style="color:blue">sayed alaraby</span>';
 		$job  = '<span style="color:red;">Web Developer & CRM Specialist</span>';
-		return view('pages.about')->with(['name' => $name, 'job' => $job]);
+		return view('pages.about', compact('name', 'job'));
 	}
 
 }
