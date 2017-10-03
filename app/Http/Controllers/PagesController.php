@@ -8,9 +8,14 @@ use Illuminate\Http\Request;
 class PagesController extends Controller {
 
 	public function about(){
-		$name = '<span style="color:blue">sayed alaraby</span>';
-		$job  = '<span style="color:red;">Web Developer & CRM Specialist</span>';
-		return view('pages.about', compact('name', 'job'));
+		
+		$people = [
+			'Ahmed Elwa',
+			'Mohamed Rabie',
+			'Sameh Sayed',
+			'Mohamed Alaraby'
+		];
+		return view('pages.about', compact('people'));
 	}
 
 	public function contact()

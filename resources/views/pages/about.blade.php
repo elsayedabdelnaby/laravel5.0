@@ -1,8 +1,16 @@
 @extends('app')
 
 @section('content')
-    <h1>About Me: {!! $name !!}</h1>
+    <h1>About Me: Elsayed Alaraby</h1>
+    @if (count($people))
+    <h3>People I Like:</h3>
+    <ul>
+    	@foreach($people as $person)
+    		<li>{{ $person }}</li>
+    	@endforeach
+    </ul>
+    @endif
     <p>
-    	{!! $job !!}
+    	is WebDeveloper, CRM Specialist & Trainer
     </p>
 @stop
