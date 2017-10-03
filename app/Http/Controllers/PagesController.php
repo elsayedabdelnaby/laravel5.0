@@ -13,4 +13,9 @@ class PagesController extends Controller {
 		return view('pages.about', compact('name', 'job'));
 	}
 
+	public function contact()
+	{
+		return view('pages.contact');
+	}
+
 }
