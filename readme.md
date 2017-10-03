@@ -52,3 +52,20 @@ return view('pages.about', $data);
 
 ##### passing data using compact function
 return view('pages.about', compact('name', 'data'));
+
+## Master Page
+laravel has app.blade.php file it's a master page which any view extends from it,
+master page has sections allow user to write contents on it
+
+#### defination section
+@yield('section-name');
+Ex: @yield('content');
+
+#### use section on view
+@section('section-name');
+Ex: 
+@yield('content')
+//write your code here
+@stop
+
+you can create more than one section on master page
