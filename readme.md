@@ -69,3 +69,13 @@ Ex:
 @stop
 
 you can create more than one section on master page
+
+## Configuration Files
+Laravel has a config folder which hold all configruations file
+
+####  app.php
+Hold all configuration informations about my app look like timezone, url and so on
+
+#### database.php
+Hold array contain all database connections which you want to deal with it
+you can add any connection to this array as you want
