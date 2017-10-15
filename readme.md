@@ -92,3 +92,6 @@ this command used to execute codes which exist on create functions of migrations
 create DB tables
 ####php artisan make:migration create_articles_table --create="articles"
 this command create a migration file which create table called articles
+###add a new column to DB table
+####php artisan make:migration add_excerpt_to_articles --table="articles"
+this command create a migration file that add excerpt column to articles table
