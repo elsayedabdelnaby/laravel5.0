@@ -79,3 +79,16 @@ Hold all configuration informations about my app look like timezone, url and so 
 #### database.php
 Hold array contain all database connections which you want to deal with it
 you can add any connection to this array as you want
+
+##Database
+Laravel has a migration folder and migration package which make tracking for database
+
+####mirgation
+migration file has two functions up & down call up when need to create table and down when need to delete table
+#####up execute when excute migration and it's hold code to create a database table
+#####down execute when rollback mirgation and it's hold code to delete a database table
+####php artisan migrate
+this command used to execute codes which exist on create functions of migrations files or
+create DB tables
+####php artisan make:migration create_articles_table --create="articles"
+this command create a migration file which create table called articles
