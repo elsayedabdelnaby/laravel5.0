@@ -95,3 +95,8 @@ this command create a migration file which create table called articles
 ###add a new column to DB table
 ####php artisan make:migration add_excerpt_to_articles --table="articles"
 this command create a migration file that add excerpt column to articles table
+
+##Model
+this is a class that's handle all functions fo object
+####php artisan make:model Article
+create a model called Article, also create a migration file for article model
