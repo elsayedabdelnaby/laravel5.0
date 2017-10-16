@@ -100,3 +100,9 @@ this command create a migration file that add excerpt column to articles table
 this is a class that's handle all functions fo object
 ####php artisan make:model Article
 create a model called Article, also create a migration file for article model
+once create model must define a fillable array which hold all columns of tables which allow to Insert/Update it on DB
+
+##Controller
+controller hold all methods which handle http request with all types (GET, POST, PUT/PATCH, DELETE)
+####php artisan make:controller ArticlesController
+this command create Controller Called ArticlesController
