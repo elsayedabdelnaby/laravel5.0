@@ -2,9 +2,9 @@
 
 @section('content')
 
-		<h2>
-			<a href=""> {{ $article->title }}</a>
-		</h2>
+		<h1>
+			{{ $article->title }}
+		</h1>
 		
 		<div class="body">{{ $article->body }}</div>
 
