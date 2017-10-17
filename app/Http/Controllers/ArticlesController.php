@@ -3,6 +3,7 @@
 use App\Article;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Carbon\Carbon;
 
 use Illuminate\Http\Request;
 
@@ -25,8 +26,12 @@ class ArticlesController extends Controller {
 
 	public function store(Request $request)
 	{
-		$input = $request->all();
-		return $input;
+		$article = new Article();
+		$article->title = $request->get('title');
+		$article->body = $request->get('body');
+		$article->published_at = Carbon::now();
+		$article->save();
+		return $article;
 	}
 
 }
