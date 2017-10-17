@@ -26,12 +26,10 @@ class ArticlesController extends Controller {
 
 	public function store(Request $request)
 	{
-		$article = new Article();
-		$article->title = $request->get('title');
-		$article->body = $request->get('body');
-		$article->published_at = Carbon::now();
-		$article->save();
-		return $article;
+		$input = $request->all();
+		$input['published_at'] = Carbon::now();
+		Article::create($input);
+		return redirect('articles');
 	}
 
 }
