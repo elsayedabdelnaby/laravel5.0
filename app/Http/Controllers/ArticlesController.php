@@ -15,10 +15,7 @@ class ArticlesController extends Controller {
 
 	public function show($id)
 	{
-		$article = Article::find($id);
-		if(is_null($article)){
-			abort(404);
-		}
+		$article = Article::findOrFail($id);
 		return view('articles.show', compact('article'));
 	}
 

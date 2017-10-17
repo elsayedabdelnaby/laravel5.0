@@ -127,3 +127,8 @@ if(is_null(Article::find($id))){
 	abort(404);
 }
 ####findOrFail
+through ModelNotFoundException if object not found automatically, not need to use is_null,
+you can work directly
+
+$article = findOrFail($id);
+return view('articles.show', compact('article'));
