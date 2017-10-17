@@ -23,4 +23,10 @@ class ArticlesController extends Controller {
 		return view('articles.create');
 	}
 
+	public function store(Request $request)
+	{
+		$input = $request->all();
+		return $input;
+	}
+
 }
