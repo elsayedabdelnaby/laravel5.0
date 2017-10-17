@@ -46,6 +46,8 @@ $data['last'] = 'alaraby';
 
 ##### passing data using with function
 return view('pages.about')->with('name', $name);
+##### passing data using with compact
+return view('pages.about', compact('name'));
 
 ##### passing array of data 
 return view('pages.about', $data);
@@ -97,7 +99,7 @@ this command create a migration file which create table called articles
 this command create a migration file that add excerpt column to articles table
 
 ##Model
-this is a class that's handle all functions fo object
+this is a class that's handle all functions of object
 ####php artisan make:model Article
 create a model called Article, also create a migration file for article model
 once create model must define a fillable array which hold all columns of tables which allow to Insert/Update it on DB
@@ -106,3 +108,10 @@ once create model must define a fillable array which hold all columns of tables 
 controller hold all methods which handle http request with all types (GET, POST, PUT/PATCH, DELETE)
 ####php artisan make:controller ArticlesController
 this command create Controller Called ArticlesController
+###index function
+handle GET request for all data
+###show function
+handle GET request with specific id
+
+##View
+the view file which receive the data from controller and display to users

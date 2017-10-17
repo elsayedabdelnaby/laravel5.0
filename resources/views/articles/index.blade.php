@@ -6,8 +6,11 @@
 	<hr>
 
 	@foreach($articles as $article)
-		<h2>{{ $article->title }}</h2>
+		<h2>
+			<a href=""> {{ $article->title }}</a>
+		</h2>
+		
 		<div class="body">{{ $article->body }}</div>
 	@endforeach
-	
+
 @stop
