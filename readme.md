@@ -142,3 +142,8 @@ can use href to execute a specific function
 href="{{action('ArticlesController@show', [$article->id])}}"
 ####by url function
 href="{{url('/articles', $article->id)}}"
+
+##Form
+to deal with form, need to install illuminate/html package
+####composer require illuminate/html
+this command used to install html package
