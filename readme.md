@@ -115,3 +115,15 @@ handle GET request with specific id
 
 ##View
 the view file which receive the data from controller and display to users
+
+
+
+###the difference between find and findOrFail functions
+####find
+return null of object not found/exist,
+you must handle it by using is_null function and return 404 error
+
+if(is_null(Article::find($id))){
+	abort(404);
+}
+####findOrFail
