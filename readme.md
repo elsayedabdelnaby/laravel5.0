@@ -132,3 +132,13 @@ you can work directly
 
 $article = findOrFail($id);
 return view('articles.show', compact('article'));
+
+###href
+can create href in laravel by passing data directly, action and url functions
+####create url directly
+href="articles/{{$article->id}}"
+####by action function
+can use href to execute a specific function
+href="{{action('ArticlesController@show', [$article->id])}}"
+####by url function
+href="{{url('/articles', $article->id)}}"
