@@ -20,6 +20,7 @@ class ArticlesController extends Controller {
 	}
 
 	public function create(){
+		return 'create';
 		return view('articles.create');
 	}
 
